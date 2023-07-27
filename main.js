@@ -40,7 +40,7 @@ composer.addPass( renderPass );
 // - - - SAO - - - 
 const saoPass = new SAOPass( scene, camera, true, true, new THREE.Vector2( window.innerWidth, window.innerHeight ));
 
-saoPass['params']['output'] = SAOPass.OUTPUT.Default
+saoPass['params']['output'] = SAOPass.OUTPUT.SAO
 saoPass['params']['saoBias'] = 1
 saoPass['params']['saoIntensity'] = .002
 saoPass['params']['saoScale'] = 1
